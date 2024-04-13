@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>子盒子宽度</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        .nav {
+            font-family: 微软雅黑;
+            font-size: 14px;
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+            margin: 100px auto;
+        }
+        p {
+            /* width: 100%; 与父类同宽 */
+            /* width: 200px; 同设置宽度 */
+            /* 不设置 与元素同宽 */
+            height: 100px;
+            display: inline-block;
+            background-color: blue;
+            margin-right: 10px;
+            /* margin-right: 20px; 边距太大 最外层盒子装不下 自动换行 */
+        }
+        span {
+            display: inline-block;
+            height: 100px;
+            background-color: rebeccapurple;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <p>
+            我叫杰尼龟我叫杰尼龟
+        </p>
+        <span>
+            我叫杰尼龟我叫杰尼龟
+
+        </span>
+    </div>
+</body>
+</html>

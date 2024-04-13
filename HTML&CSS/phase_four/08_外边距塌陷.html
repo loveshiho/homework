@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>外边距塌陷</title>
+    <style>
+        div {
+            width: 300px;
+            height: 300px;
+            margin: 0 auto;
+            background-color: pink;
+        }
+        div p {
+            width: 200px;
+            height: 200px;
+            background-color: skyblue;
+            margin: 0 auto;
+            margin-top: 100px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        我叫杰尼龟
+        <p>我叫杰尼龟</p>
+        <!-- 塌陷条件苛刻 紧挨 空盒子 -->
+    </div>    
+</body>
+</html>
