@@ -18,7 +18,7 @@ public class TestJDBC05 {
         try {
             Class.forName(driver);
             connection = DriverManager.getConnection(url, user, password);
-            String sql = "insert into dept values (DEFAULT ,?,?)";
+            String sql = "insert into dept values (DEFAULT,?,?)";
             preparedStatement  = connection.prepareStatement(sql);// 这里已经传入SQL语句
 //设置参数
             for (int i = 1; i <= 10663; i++) {
